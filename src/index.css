@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "VarelaRound-Regular";
+    src: url("../public/fonts/VarelaRound-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "VarelaRound-Regular";
+    color: rgb(48, 48, 48);
+}
+
+img {
+    max-width: 100%;
+}
