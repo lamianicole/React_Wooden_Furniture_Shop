@@ -1,3 +1,4 @@
+/* Desktop Styles */
 .pink-background {
   height: 100vh;
   width: 25vw;
@@ -72,42 +73,40 @@ button:hover {
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
+  :root {
+    --left-spacing: 20px; /* Einheitlicher linker Abstand */
+  }
+
   .home-article {
     flex-direction: column; /* Inhalte untereinander */
     align-items: flex-start; /* Links ausrichten */
     text-align: left; /* Text linksbündig */
     width: 100%;
-    padding-left: var(--left-spacing);
+    padding-left: var(--left-spacing); /* Einheitlicher linker Abstand */
   }
 
   .left-part {
-    padding: 10px;
+    padding: 10px var(--left-spacing); /* Einheitliches Padding mit linker Abstand */
     text-align: left; /* Links ausrichten */
-    padding-left: var(--left-spacing);
   }
 
   h1 {
     font-size: 2.4rem;
     text-align: left; /* Links ausrichten */
+    margin-left: var(--left-spacing); /* Konsistenter Abstand */
   }
 
   p {
     font-size: 1.6rem;
     text-align: left; /* Links ausrichten */
+    margin-left: var(--left-spacing); /* Konsistenter Abstand */
   }
 
   button {
     display: block; /* Block-Level-Element */
-    margin: 10px 0; /* Abstand oben/unten */
+    margin: 10px var(--left-spacing) 10px 0; /* Konsistenter linker Abstand */
     text-align: left; /* Links ausrichten */
     padding: 8px 15px;
     font-size: 1rem;
-  }
-
-  h1,
-  p,
-  button {
-    text-align: left; /* Links ausrichten */
-    margin-left: var(--left-spacing); /* Optional: linker Abstand */
   }
 }
