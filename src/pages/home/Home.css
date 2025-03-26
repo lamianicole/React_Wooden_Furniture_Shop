@@ -77,12 +77,13 @@ button:hover {
     align-items: flex-start; /* Links ausrichten */
     text-align: left; /* Text linksbündig */
     width: 100%;
-    padding-left: 20px; /* Optional: Abstand links */
+    padding-left: var(--left-spacing);
   }
 
   .left-part {
     padding: 10px;
     text-align: left; /* Links ausrichten */
+    padding-left: var(--left-spacing);
   }
 
   h1 {
@@ -101,5 +102,12 @@ button:hover {
     text-align: left; /* Links ausrichten */
     padding: 8px 15px;
     font-size: 1rem;
+  }
+
+  h1,
+  p,
+  button {
+    text-align: left; /* Links ausrichten */
+    margin-left: var(--left-spacing); /* Optional: linker Abstand */
   }
 }

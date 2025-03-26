@@ -1,3 +1,4 @@
+/* Allgemeine Styles */
 .line {
   position: relative;
   margin-bottom: 20px;
@@ -56,4 +57,44 @@
 .copyright p {
   font-size: 0.7rem;
   margin-left: 50%;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  /* Konsistenter linker Abstand für alle relevanten Elemente */
+  :root {
+    --left-spacing: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: var(--left-spacing);
+  }
+
+  .footer-left,
+  .footer-right {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: var(--left-spacing); /* Konsistenter Abstand */
+    width: 100%;
+  }
+
+  .footer-right img {
+    max-width: 80%;
+    height: auto;
+    margin-left: var(--left-spacing);
+  }
+
+  .contact-data p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    text-align: left;
+  }
+
+  .copyright p {
+    font-size: 0.7rem;
+    text-align: left;
+    margin-left: 17px;
+  }
 }
